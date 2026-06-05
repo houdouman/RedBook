@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: xiaohashu-search # 搜索服务
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+      discovery:
+        namespace: xiaohashu
+        enabled: true
+        group: DEFAULT_GROUP
+        prefix: ${spring.application.name} # 配置 Data Id 前缀，这里使用应用名称作为前缀
+        file-extension: yaml # 配置文件格式
+        server-addr: 127.0.0.1:8848

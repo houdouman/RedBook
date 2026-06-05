@@ -1,0 +1,2 @@
+com.dobby.framework.biz.context.config.ContextAutoConfiguration
+com.dobby.framework.biz.context.config.FeignContextAutoConfiguration
